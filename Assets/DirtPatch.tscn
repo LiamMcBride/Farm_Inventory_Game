@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://6b2i7anrag51"]
+
+[ext_resource type="Texture2D" uid="uid://v3g3fa5c8ta4" path="res://Textures/mud_forest_4k.gltf/textures/mud_forest_arm_4k.jpg" id="1_iehen"]
+[ext_resource type="Texture2D" uid="uid://dxanxa0mpsp1r" path="res://Textures/mud_forest_4k.gltf/textures/mud_forest_nor_gl_4k.jpg" id="2_moos8"]
+[ext_resource type="Texture2D" uid="uid://dhtkgctmyjch" path="res://Textures/mud_forest_4k.gltf/textures/mud_forest_diff_4k.jpg" id="3_746ls"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qxntk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m06pw"]
+albedo_color = Color(0.286275, 0.176471, 0.0470588, 1)
+albedo_texture = ExtResource("1_iehen")
+roughness_texture = ExtResource("3_746ls")
+normal_enabled = true
+normal_texture = ExtResource("2_moos8")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+
+[node name="DirtPatch" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_qxntk")
+surface_material_override/0 = SubResource("StandardMaterial3D_m06pw")
