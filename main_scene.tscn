@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://ca0xtpjqnaxm5"]
+[gd_scene load_steps=18 format=3 uid="uid://ca0xtpjqnaxm5"]
 
 [ext_resource type="Texture2D" uid="uid://dlb7iwbo7vo7n" path="res://Textures/forrest_ground_01_4k.gltf/textures/forrest_ground_01_diff_4k.jpg" id="1_ooyv3"]
+[ext_resource type="PackedScene" uid="uid://ccij1me8ns2f2" path="res://Scenes/GrassSquare.tscn" id="2_10gxu"]
 [ext_resource type="Texture2D" uid="uid://kd4cwdhxlpb7" path="res://Textures/forrest_ground_01_4k.gltf/textures/forrest_ground_01_nor_gl_4k.jpg" id="2_qe2gd"]
 [ext_resource type="Texture2D" uid="uid://dd1xby2g6aily" path="res://Textures/forrest_ground_01_4k.gltf/textures/forrest_ground_01_rough_4k.jpg" id="3_otmij"]
 [ext_resource type="Script" path="res://CharacterBody3D.gd" id="4_3inf2"]
@@ -41,7 +42,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [node name="MainScene" type="Node3D"]
 script = ExtResource("4_mxt7g")
-BlockScene = ExtResource("8_ro17m")
+BlockScene = ExtResource("2_10gxu")
 metadata/Block = &""
 metadata/group = &"Block"
 
@@ -91,3 +92,15 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.39988, 2.51007, -0.6
 
 [node name="Block2" parent="." instance=ExtResource("7_e6kto")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.56517, 3.42309, -2.21258)
+
+[node name="GrassSquare" parent="." instance=ExtResource("2_10gxu")]
+transform = Transform3D(0.35, 0, 0, 0, 1, 0, 0, 0, 0.35, -9.30687, 2.5, -2.55229)
+
+[node name="DirtPatch2" parent="." instance=ExtResource("8_ro17m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.28952, 2.58763, -1.3506)
+
+[node name="GrassSquare2" parent="." instance=ExtResource("2_10gxu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.2385, 2.5, -0.0729357)
+
+[node name="GrassSquare3" parent="." instance=ExtResource("2_10gxu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.32316, 2.5, -2.45398)

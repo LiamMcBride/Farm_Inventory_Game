@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccij1me8ns2f2"]
+
+[ext_resource type="Texture2D" uid="uid://8yocufp1ktnt" path="res://Assets/10450_Rectangular_Grass_Patch_L3.123c827d110a-1347-4381-9208-e4f735762647/10450_Rectangular_Grass_Patch_v1_Diffuse.jpg" id="1_84gtp"]
+[ext_resource type="ArrayMesh" uid="uid://dxbwp5sbh01io" path="res://Assets/10450_Rectangular_Grass_Patch_L3.123c827d110a-1347-4381-9208-e4f735762647/10450_Rectangular_Grass_Patch_v1_iterations-2.obj" id="2_3f5o7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xcea0"]
+albedo_texture = ExtResource("1_84gtp")
+
+[node name="GrassSquare" type="Node3D"]
+
+[node name="10450RectangularGrassPatchV1Iterations-2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.003, -2.09272e-18, -3.04919e-25, 0, -1.31134e-10, 0.01, -2.09272e-18, -0.003, -4.37114e-10, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+material_override = SubResource("StandardMaterial3D_xcea0")
+mesh = ExtResource("2_3f5o7")

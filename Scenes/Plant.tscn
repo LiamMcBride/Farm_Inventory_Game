@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://eh0h4n2ygy8s"]
+
+[ext_resource type="ArrayMesh" uid="uid://e8wsqs4eevcr" path="res://Assets/Plant Model/AnyConv.com__Plant FBX.obj" id="1_nyb0a"]
+[ext_resource type="Material" uid="uid://ciebkmwl451ku" path="res://Textures/leaf_texture.tres" id="2_spmrs"]
+[ext_resource type="Material" uid="uid://dkgi12h4jeqf2" path="res://Textures/plant_ground.tres" id="3_nv4kg"]
+
+[node name="Plant" type="Node3D"]
+
+[node name="AnyConvcomPlantFbx" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.468295, 2.08165e-12, 0.285341)
+mesh = ExtResource("1_nyb0a")
+surface_material_override/0 = ExtResource("2_spmrs")
+surface_material_override/1 = ExtResource("2_spmrs")
+surface_material_override/2 = ExtResource("2_spmrs")
+surface_material_override/3 = ExtResource("2_spmrs")
+surface_material_override/4 = ExtResource("2_spmrs")
+surface_material_override/5 = ExtResource("2_spmrs")
+surface_material_override/6 = ExtResource("2_spmrs")
+surface_material_override/7 = ExtResource("2_spmrs")
+surface_material_override/8 = ExtResource("2_spmrs")
+surface_material_override/9 = ExtResource("2_spmrs")
+surface_material_override/10 = ExtResource("2_spmrs")
+surface_material_override/11 = ExtResource("2_spmrs")
+surface_material_override/12 = ExtResource("2_spmrs")
+surface_material_override/13 = ExtResource("2_spmrs")
+surface_material_override/14 = ExtResource("2_spmrs")
+surface_material_override/15 = ExtResource("2_spmrs")
+surface_material_override/16 = ExtResource("2_spmrs")
+surface_material_override/17 = ExtResource("2_spmrs")
+surface_material_override/18 = ExtResource("2_spmrs")
+surface_material_override/28 = ExtResource("2_spmrs")
+surface_material_override/29 = ExtResource("3_nv4kg")

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://e8wsqs4eevcr"
+path="res://.godot/imported/AnyConv.com__Plant FBX.obj-08dfac00d451c35b7e2bd6732f70932c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/AnyConv.com__Plant FBX.obj-08dfac00d451c35b7e2bd6732f70932c.mesh"]
+
+source_file="res://Assets/Plant Model/AnyConv.com__Plant FBX.obj"
+dest_files=["res://.godot/imported/AnyConv.com__Plant FBX.obj-08dfac00d451c35b7e2bd6732f70932c.mesh", "res://.godot/imported/AnyConv.com__Plant FBX.obj-08dfac00d451c35b7e2bd6732f70932c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
